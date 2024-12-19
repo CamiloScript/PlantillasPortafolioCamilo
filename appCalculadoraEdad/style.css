@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Ajustar márgenes para que sea más flexible */
+    padding: 20px; /* Espaciado interno */
+}
+
+div#contenedor-app {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    max-width: 800px; /* Limitar en pantallas grandes */
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50px 50px 200px 50px; /* Simplificación */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+div#contenedor-inputs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden */
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px; /* Tamaño adaptativo */
+    gap: 15px;
+}
+
+input.inputs {
+    flex: 1; /* Para que crezcan proporcionalmente */
+    min-width: 100px; /* Asegurar que no se reduzcan demasiado */
+    height: 60px;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+div#contenedor-botonOn {
+    width: 100%; /* Ancho completo */
+    height: 1px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0; /* Separación del botón */    
+}
+
+button#botonOn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    background-color: hsl(259, 100%, 65%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    border: none;
+}
+
+div#contenedor-resultados {
+    width: 100%; /* Ancho completo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p.parrafo-resultado {
+    margin: 10px 0;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px; /* Tamaño adaptable */
+    text-align: center;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px; /* Tamaño adaptable */
+}
+
+div.attribution {
+    margin:100px;
+    text-align: center;
+}
+/* Media Queries */
+
+/* Para pantallas móviles */
+@media (max-width: 375px) {
+    div#contenedor-app {
+        padding: 20px;
+    }
+
+    div#contenedor-inputs {
+        flex-direction: column; /* Los inputs en columna */
+        align-items: center;
+    }
+    
+    input.inputs {
+        width: 80%; /* Reducir el ancho */
+    }
+
+    p.parrafo-resultado {
+        font-size: 30px; /* Reducir tamaño de fuente */
+    }
+
+    span {
+        font-size: 30px; /* Reducir tamaño de fuente */
+    }
+}
+
+/* Para pantallas grandes (escritorio) */
+@media (min-width: 1440px) {
+    div#contenedor-app {
+        max-width: 1200px; /* Expandir más en escritorio */
+    }
+
+    p.parrafo-resultado {
+        font-size: 120px; /* Aumentar tamaño de fuente */
+    }
+
+    span {
+        font-size: 120px; /* Aumentar tamaño de fuente */
+    }
+}

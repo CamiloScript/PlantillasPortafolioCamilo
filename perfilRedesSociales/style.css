@@ -1,0 +1,83 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    justify-items: center;
+}
+
+div.contenedorPerfil {
+    justify-items: center;
+    background-color: hsl(0, 0%, 12%);
+    width: 400px;
+    height: 680px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div.contenedorFoto {
+    height: 176px;
+    width: 176px;
+    
+}
+
+img#fotoPerfil {
+    border-radius: 50%;
+
+}
+h1#tituloPerfil {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2#direccionPerfil {
+    color: hsl(75, 94%, 57%);
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+
+p#estudios {
+    color:  hsl(0, 0%, 50%);
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+div#contenedorBotones {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+button.boton-rrss {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+
+}
+ button.boton-rrss:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    transition: all 0.5s ease;
+ }
+
+
+div.attribution{
+    margin: 20px;
+    align-content: center;
+    text-align: center;
+    color:  hsl(0, 0%, 100%);
+}

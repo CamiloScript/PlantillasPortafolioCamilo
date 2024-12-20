@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>blogPreviewCard | Camilo González Jara</title>
@@ -10,15 +13,20 @@
   <body>
     <div id="contenedorCard">
       <div id="contenedorImagen">
-        <img src="./images/illustration-article.svg" alt="imagenCard" />
+        <img id="imagenCard" src="./images/illustration-article.svg" alt="imagenCard" />
       </div>
       <button id="botonSeccion">Learning</button>
-      <p>Publicado el 19 de Diciembre 2024</p>
-      <h1>El Poder de HTML junto a CSS</h1>
-      <p id="contenidoCard">
-        Estos languajes son la columna de cada sitio web, definiendo su
-        estructura, contenido y presentación.
-      </p>
+      <div id="contenedorTexto">
+        <p>Publicado el 19 de Diciembre 2024</p>
+        <h1>
+          <a href="https://github.com/CamiloScript">El Poder de HTML y CSS</a>
+        </h1>
+        <p id="contenidoCard">
+          Estos languajes son la columna de cada sitio web, definiendo su
+          estructura, contenido y presentación.
+        </p>
+      </div>
+      <img src="./images/favicon-32x32.png" alt="LogoLechu" /> CamiloScript
     </div>
   </body>
 </html>

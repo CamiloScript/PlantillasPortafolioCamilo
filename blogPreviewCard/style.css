@@ -12,7 +12,7 @@ div#contenedorCard {
     display: block;
     background-color: hsl(0, 0%, 100%);
     width: auto;
-    max-width: 30%;
+    max-width: 18%;
     height: auto;
     margin: 10px;
     padding: 20px;
@@ -30,6 +30,7 @@ div#contenedorImagen {
 
 img#imagenCard {
     border-radius: 5%;
+    max-width: 100%;
 }
 
 button#botonSeccion {
@@ -80,5 +81,23 @@ h1 a:hover {
     transition: all 0.7s;
 }
 
+/* Media Query para dispositivos móviles con un ancho máximo de 375px */
+@media (max-width: 400px) {
+    div#contenedorCard {
+        max-width: 90%; /* Aumenta el ancho del contenedor para adaptarse mejor */
+        padding: 10px; /* Reduce el padding para dar más espacio */
+    }
 
-@media
+    button#botonSeccion {
+        width: 80px; /* Reduce el tamaño del botón */
+        height: 25px; /* Ajusta la altura del botón */
+    }
+
+    p {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+
+    h1 a {
+        font-size: 18px; /* Ajusta el tamaño del enlace */
+    }
+}
